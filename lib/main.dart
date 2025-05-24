@@ -1,22 +1,27 @@
 import 'package:flutter/material.dart';
 
 const TextStyle titleText = TextStyle(
+  fontFamily: 'Pretendard',
   fontSize: 64,
   fontWeight: FontWeight.w600,
 );
 const TextStyle subtitleText = TextStyle(
+  fontFamily: 'Pretendard',
   fontSize: 48,
   fontWeight: FontWeight.w500,
 );
 const TextStyle inputText = TextStyle(
+  fontFamily: 'Pretendard',
   fontSize: 32,
   fontWeight: FontWeight.w300,
 );
 const TextStyle regularText = TextStyle(
+  fontFamily: 'Pretendard',
   fontSize: 36,
   fontWeight: FontWeight.w400,
 );
 Color backColor = Color(0xFFF9EFFF);
+Color selectedColor = Color(0xFFE1C2F2);
 const double breakPointWidth = 1080;
 
 void main() {
@@ -43,6 +48,8 @@ class mainpage extends StatefulWidget {
 class _mainpageState extends State<mainpage> {
   @override
   Widget build(BuildContext context) {
+    bool SelectedTabisRanking = true;
+
     double pageWidth =
         MediaQuery.of(context).size.width;
     return Scaffold(
@@ -68,6 +75,7 @@ class _mainpageState extends State<mainpage> {
                 Text(
                   'OTTS',
                   style: TextStyle(
+                    fontFamily: 'Pretendard',
                     fontSize: 36,
                     fontWeight: FontWeight.w900,
                   ),
@@ -76,6 +84,7 @@ class _mainpageState extends State<mainpage> {
                 Text(
                   '공개SW프로젝트 4조',
                   style: TextStyle(
+                    fontFamily: 'Pretendard',
                     fontSize: 24,
                     fontWeight: FontWeight.w400,
                   ),
@@ -83,6 +92,7 @@ class _mainpageState extends State<mainpage> {
               ],
             ),
           ),
+          SizedBox(height: 100),
         ],
       ),
     );
