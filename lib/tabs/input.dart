@@ -9,16 +9,25 @@ class InputTab extends StatelessWidget {
   Widget build(BuildContext context) {
     double pageWidth =
         MediaQuery.of(context).size.width;
+    double horizontalPadding =
+        pageWidth > breakPointWidth
+            ? (pageWidth - breakPointWidth) / 2
+            : 20;
 
     return Padding(
       padding: EdgeInsets.symmetric(
-        horizontal:
-            pageWidth > breakPointWidth
-                ? (pageWidth - breakPointWidth) /
-                    2
-                : 20,
+        horizontal: horizontalPadding,
       ),
-      child: Text('temp'),
+      child: Container(
+        color: Colors.white,
+        width: double.infinity,
+        child: Column(
+          children: [
+            SizedBox(height: 64),
+            Text("hello"),
+          ],
+        ),
+      ),
     );
   }
 }

@@ -53,7 +53,7 @@ class mainpage extends StatefulWidget {
 }
 
 class _mainpageState extends State<mainpage> {
-  bool SelectedTabisRanking = true;
+  bool isNotSelectedTabisRanking = true;
 
   @override
   Widget build(BuildContext context) {
@@ -125,7 +125,7 @@ class _mainpageState extends State<mainpage> {
                             onTap:
                                 () => setState(
                                   () =>
-                                      SelectedTabisRanking =
+                                      isNotSelectedTabisRanking =
                                           false,
                                 ),
                             child: Container(
@@ -135,7 +135,7 @@ class _mainpageState extends State<mainpage> {
                                   ),
                               decoration: BoxDecoration(
                                 color:
-                                    SelectedTabisRanking ==
+                                    isNotSelectedTabisRanking ==
                                             false
                                         ? Colors
                                             .white
@@ -164,7 +164,7 @@ class _mainpageState extends State<mainpage> {
                             onTap:
                                 () => setState(
                                   () =>
-                                      SelectedTabisRanking =
+                                      isNotSelectedTabisRanking =
                                           true,
                                 ),
                             child: Container(
@@ -174,7 +174,7 @@ class _mainpageState extends State<mainpage> {
                                   ),
                               decoration: BoxDecoration(
                                 color:
-                                    SelectedTabisRanking ==
+                                    isNotSelectedTabisRanking ==
                                             true
                                         ? Colors
                                             .white
@@ -207,9 +207,9 @@ class _mainpageState extends State<mainpage> {
                       milliseconds: 300,
                     ),
                     child:
-                        SelectedTabisRanking
-                            ? const RankingTab()
-                            : const InputTab(),
+                        isNotSelectedTabisRanking
+                            ? const InputTab()
+                            : const RankingTab(),
                   ),
                 ],
               ),
