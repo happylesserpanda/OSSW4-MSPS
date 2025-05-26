@@ -3,26 +3,31 @@ import 'tabs/input.dart';
 import 'tabs/ranking.dart';
 
 const TextStyle titleText = TextStyle(
+  color: Color(0xFF111111),
   fontFamily: 'Pretendard',
-  fontSize: 64,
+  fontSize: 48,
   fontWeight: FontWeight.w600,
 );
 const TextStyle selectText = TextStyle(
+  color: Color(0xFF111111),
   fontFamily: 'Pretendard',
   fontSize: 20,
   fontWeight: FontWeight.w600,
 );
 const TextStyle subtitleText = TextStyle(
+  color: Color(0xFF111111),
   fontFamily: 'Pretendard',
-  fontSize: 48,
+  fontSize: 36,
   fontWeight: FontWeight.w500,
 );
 const TextStyle inputText = TextStyle(
+  color: Color(0xFF111111),
   fontFamily: 'Pretendard',
-  fontSize: 32,
+  fontSize: 20,
   fontWeight: FontWeight.w300,
 );
 const TextStyle regularText = TextStyle(
+  color: Color(0xFF111111),
   fontFamily: 'Pretendard',
   fontSize: 36,
   fontWeight: FontWeight.w400,
@@ -30,6 +35,8 @@ const TextStyle regularText = TextStyle(
 Color backColor = Color(0xFFF9EFFF);
 Color selectedColor = Color(0xFFE1C2F2);
 const double breakPointWidth = 1080;
+final TextEditingController inputCon =
+    TextEditingController();
 
 void main() {
   runApp(const OTTS());
